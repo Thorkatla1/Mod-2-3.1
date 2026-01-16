@@ -37,8 +37,13 @@ a {
   position: absolute;
   height: 3px;
   background-color: black;
-  width: 100%;
+  width: 10;
   bottom: -3px;
+  left:0;
+  translatet: all 300ms ease  ;
+}
+.link__hover-effect:hover::after{
+  width: 100%;
 }
 li {
   list-style: none;
@@ -254,9 +259,8 @@ nav {
   transform: translateY(100);
   z-index: 3;
   opacity: 0;
-  transition:
-    transform 450ms,
-    opacity 300ms;
+  transition: transform 450ms;
+    opacity: 300ms;
 }
 .project__description--para {
   margin: 16 px 0;
@@ -287,10 +291,10 @@ footer {
   width: 100%;
   max-width: 500px;
   display: flex;
-  justify-content: space-around; 
+  justify-content: space-around;
   margin-bottom: 28px;
 }
-  .footer__row {
+.footer__row {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,19 +311,21 @@ footer {
 .footer__logo--popper {
   color: #fff;
 }
+
 .footer__logo--popper {
   position: absolute;
   right: 0;
   top: 30px;
   font-weight: 700;
   opacity: 0;
-  transition:  all 300ms ease;
+  transition: all 300ms ease;
 }
 .footer__anchor {
   position: relative;
   margin-bottom: 20px;
 }
-.footer__anchor:hover .footer__logo--popper {
+.footer__anchor:hover
+.footer__logo--popper {
   transform: translateX(60px);
   opacity: 1;
 }
