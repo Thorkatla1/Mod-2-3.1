@@ -39,11 +39,16 @@ a {
   background-color: black;
   width: 10;
   bottom: -3px;
-  left:0;
-  translatet: all 300ms ease  ;
+  right: 0;
+  width: 0;
+  transition: all 300ms ease  ;
 }
 .link__hover-effect:hover::after{
   width: 100%;
+  left: 0;
+}
+.link__hover-effect--white::after{
+  background-color: white;
 }
 li {
   list-style: none;
