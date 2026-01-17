@@ -336,7 +336,7 @@ footer {
   opacity: 1;
 }
 
-/* small phones, tablets, large smartphones*/
+/* tablets, large smartphones*/
 @media (max-width: 768px) {
   nav {
     height: 68px;
@@ -351,14 +351,17 @@ footer {
     width: calc(100% / 3);
   }
   .project__description{
-    padding-right: 30px;
-    left; 30-x
+    padding-right: 60px;
+    left: 30;
   }
   .project__description--para {
     font-size: 14px;
+    
   }
   .row{
     padding: 0 12px;
   }
   
   }
+
+/*small phones*/
